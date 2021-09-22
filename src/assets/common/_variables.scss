@@ -1,0 +1,76 @@
+// Margins
+$section-margin: '50px';
+// -------------------------- font family
+$primary-font: "Roboto";
+$font-oswald: "Oswald";
+// -------------------------- font-sizes
+$fs-12: 12px;
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-24: 24px;
+$fs-28: 28px;
+$fs-36: 36px;
+$fs-48: 48px;
+$fs-65: 66px;
+// -------------------------- font weight
+$fw-normal: 400;
+$fw-sbold: 500;
+$fw-bold: 800;
+// -------------------------- colors
+$primary-gradient: transparent linear-gradient(105deg, rgba(1, 177, 72, 1) 0%, rgba(6, 136, 92, 1) 100%) 0% 0% no-repeat padding-box;
+$black: #000; // black
+$white: #fff; // white
+$grey: rgba(64, 64, 64, 1);
+$text: rgba(144, 144, 144, 1);
+$orange: #d17600;
+$orange-light: #e39023;
+$primary: rgba(1, 177, 72, 1);
+$light: rgba(231, 231, 231, 1);
+$danger: #e34348;
+// mixins
+$browsers: "moz",
+"webkit",
+"o";
+@mixin transition($property, $time, $animation) {
+    @each $browser in $browsers {
+        -#{$browser}-transition: $property $time $animation;
+    }
+    transition: $property $time $animation;
+}
+
+@mixin transform($property) {
+    @each $browser in $browsers {
+        -#{$browser}-transform: $property;
+    }
+    transform: $property;
+}
+
+@mixin calc($property, $default, $expression) {
+    #{$property}: $default;
+    @each $browser in $browsers {
+        #{$property}: -#{$browser}-calc(#{$expression});
+    }
+    #{$property}: calc(#{$expression});
+}
+
+@mixin border-radius($value) {
+    border-radius: $value;
+    @each $browser in $browsers {
+        -#{$browser}-border-radius: $value;
+    }
+}
+
+@mixin border-radius-all($lt, $rt, $rb, $lb) {
+    border-radius: $lt $rt $rb $lb;
+    @each $browser in $browsers {
+        -#{$browser}-border-radius: $lt $rt $rb $lb;
+    }
+}
+
+@mixin box-shadow($x, $y, $blur, $color) {
+    box-shadow: $x $y $blur $color;
+    @each $browser in $browsers {
+        -#{$browser}-box-shadow: $x $y $blur $color;
+    }
+}

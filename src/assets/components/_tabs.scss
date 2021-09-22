@@ -1,0 +1,166 @@
+.basic-tab {
+    .nav.nav-tabs {
+        border: 0;
+        li {
+            margin: 0 15px 15px 0;
+            .nav-link {
+                padding: 5px 2px;
+                border: 0;
+                border-bottom: 2px solid transparent;
+                color: $text;
+                cursor: pointer;
+                &.active {
+                    border: 0;
+                    border-bottom: 2px solid $grey;
+                    color: $grey;
+                }
+            }
+        }
+    }
+    &.lg {
+        .nav.nav-tabs {
+            margin-bottom: 30px;
+            li {
+                .nav-link {
+                    font-size: $fs-18;
+                    border-bottom: 3px solid transparent;
+                    &.active {
+                        border-bottom: 3px solid $grey;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.column-tab {
+    border: 1px solid darken($white, 10%);
+    @include box-shadow(0, 3px, 6px, rgba(0, 0, 0, 0.29));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .nav.nav-tabs {
+        width: 25%;
+        border: 0;
+        display: block;
+        border: 0;
+        border-right: 1px solid darken($white, 10%);
+        @include box-shadow(1px, 0px, 6px, rgba(0, 0, 0, 0.1));
+        li {
+            margin: 0;
+            display: block;
+            .nav-link {
+                padding: 15px 20px;
+                border: 0;
+                color: $text;
+                cursor: pointer;
+                @include border-radius(0);
+                display: block;
+                position: relative;
+                height: 50px;
+                &.active {
+                    border: 0;
+                    color: $white;
+                    background: transparent linear-gradient(105deg, rgba(1, 177, 72, 1) 0%, rgba(6, 136, 92, 1) 100%) 0%
+                        0% no-repeat padding-box;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 100%;
+                        top: 0;
+                        border-left: 20px solid rgba(6, 136, 92, 1);
+                        border-top: 25px solid transparent;
+                        border-bottom: 25px solid transparent;
+                    }
+                }
+            }
+        }
+    }
+    .tab-content {
+        width: 75%;
+        .tab-pane {
+            padding: 30px 30px 30px 50px;
+        }
+    }
+}
+
+.collapse-con {
+    .btn.btn-nothing {
+        display: block;
+        border-bottom: 1px solid darken($white, 10%);
+        width: 100%;
+        text-align: left;
+        color: $grey;
+        font-size: $fs-16;
+        padding: 15px 50px 15px 0;
+        position: relative;
+        white-space: break-spaces;
+        &::after {
+            content: ">";
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            color: $grey;
+            @include transform(rotate(90deg) scale(1, 2));
+        }
+        &.border-bottom-0 {
+            border-bottom: 0;
+        }
+    }
+    .collapse-body {
+        padding: 15px 0;
+        border-bottom: 1px solid darken($white, 10%);
+    }
+    &.collapse-con-white {
+        .btn.btn-nothing {
+            color: $white;
+            small {
+                color: darken($white, 20%);
+            }
+        }
+        * {
+            color: $white;
+        }
+    }
+}
+
+.getting-around-tab {
+    .column-tab {
+        height: 400px;
+        overflow: hidden;
+        .nav.nav-tabs {
+            width: 15%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            height: 100%;
+            li {
+                .nav-link {
+                    height: auto;
+                    text-align: center;
+                    img {
+                        height: 30px;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        color: $grey;
+                        font-weight: $fw-bold;
+                        margin: 0;
+                    }
+                    &.active {
+                        border: 1px solid $primary;
+                        background: lighten($primary, 60%);
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .tab-content {
+            width: 85%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            height: 100%;
+        }
+    }
+}

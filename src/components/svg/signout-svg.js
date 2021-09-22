@@ -1,0 +1,4 @@
+import React from 'react';
+const SignoutSVG = (props) =>
+    <svg className={props.className} xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"><defs></defs><g transform="translate(0.5 0.5)"><path className="a" style={{ fill: "none", stroke: "#909090", strokeLinecap: "round", strokeLinejoin: "round" }} d="M6.814,15H4.271A1.3,1.3,0,0,1,3,13.667V4.333A1.3,1.3,0,0,1,4.271,3H6.814" transform="translate(-3 -3)" /><path className="a" style={{ fill: "none", stroke: "#909090", strokeLinecap: "round", strokeLinejoin: "round" }} d="M16,13.915l3.178-3.457L16,7" transform="translate(-7.178 -4.457)" /><line className="a" style={{ fill: "none", stroke: "#909090", strokeLinecap: "round", strokeLinejoin: "round" }} x1="8" transform="translate(3.559 5.958)" /></g></svg>;
+export default SignoutSVG

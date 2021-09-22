@@ -1,0 +1,54 @@
+footer {
+    position: relative;
+    background-color: lighten($black, 6%);
+    padding: 40px 0 0;
+    .container-fluid {
+        max-width: 1300px;
+        h4 {
+            color: $white;
+            font-family: $primary-font;
+            font-weight: $fw-normal;
+        }
+        a {
+            color: lighten($text, 20%);
+        }
+        p {
+            color: $text;
+        }
+        ul {
+            li {
+                margin-bottom: 5px;
+            }
+        }
+        .footer-contact {
+            .shape-name {
+                .shape-circle.image {
+                    width: 30px;
+                    height: 30px;
+                    svg {
+                        width: 25px;
+                    }
+                }
+            }
+        }
+        .footer-cities {
+            ul {
+                li {
+                    display: inline-block;
+                    width: 24%;
+                }
+            }
+        }
+        .footer-links {
+            .social {
+                a {
+                    margin-right: 8px;
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

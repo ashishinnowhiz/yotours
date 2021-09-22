@@ -1,0 +1,20 @@
+{
+    "WELCOME": "Velkommen til {cityName}",
+    "CITY_DESCRIPTION": "Barokke gaderne og kejserlige paladser sætter scenen for Wiens kunstneriske og musikalske mesterværker sammen med dets kaffehuskultur og livlige epikuriske og designscener.",
+    "IMPERIAL_ARCHITECTURE": "Imperial arkitektur",
+    "IMPERIAL_ARCHITECTURE_DESC": "Wiens imperiale storhed er arven fra det magtfulde Habsburg-monarki. Deres hjem i mere end seks århundreder, Hofburg-palassekomplekset, indeholder Burgkapelle (Imperial Chapel), hvor Wien Boys 'Cho synger søndag ...",
+    "READ_MORE": "Læs mere",
+    "header.LOCAL_EXPERIENCE": "Lokale oplevelser i",
+    "banner.PLAN_TOUR": "Planlæg tur",
+    "banner.STORYTELLER": "storytellers",
+    "banner.CITY_BLOGS": "by blogs",
+    "banner.CITY_VBLOGS": "By Vlogs",
+    "banner.SOCIAL_MEDIA": "Sociale medier",
+    "banner.BUSINESS_PARTNER": "Forretningspartnere",
+    "banner.PART_OF_COMMUNITY": "Vær en del af Yo Tour-samfundet",
+    "banner.CITY_GUIDE_FOR": "Byguide for {cityName}",
+    "city.TYPE_OF_EXPERIENCE": "Types of experiences in {cityName}",
+    "city.EXPERIENCE_CITY_INTEREST": "Experience {cityName} for every interest",
+    "city.TOUR_TYPES": "{tourName} in {cityName} ({count})",
+    "city.TOUR_TYPES_exp": "Limited time deals in {cityName} ({count})"
+}

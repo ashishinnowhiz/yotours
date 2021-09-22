@@ -1,0 +1,308 @@
+body {
+    font-family: $primary-font;
+    font-size: $fs-14;
+    letter-spacing: 0;
+    font-weight: $fw-normal;
+    vertical-align: middle;
+}
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    @include box-shadow(0, 0, 0, transparent);
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $grey;
+}
+h1 {
+    font-family: $font-oswald;
+    font-size: $fs-36;
+    line-height: 44px;
+    font-weight: 300;
+}
+h2 {
+    font-family: $font-oswald;
+    font-size: $fs-24;
+    line-height: 32px;
+    font-weight: 300;
+}
+h3 {
+    font-family: $font-oswald;
+    font-size: $fs-18;
+    line-height: 26px;
+    font-weight: 300;
+}
+h4 {
+    font-size: $fs-16;
+    line-height: 24px;
+    font-weight: $fw-bold;
+}
+h5 {
+    font-size: $fs-14;
+    line-height: 22px;
+    font-weight: $fw-bold;
+}
+h6 {
+    font-size: $fs-14;
+    line-height: 22px;
+    font-weight: $fw-normal;
+}
+p,
+li {
+    font-size: $fs-14;
+    line-height: 22px;
+    font-weight: $fw-normal;
+    color: $text;
+}
+.cursor-pointer {
+    cursor: pointer !important;
+}
+.box-shadow {
+    @include box-shadow(0, 3px, 6px, rgba(0, 0, 0, 0.16));
+}
+.d-table-middle {
+    display: table;
+    width: 100%;
+    height: 100%;
+    .d-table-m {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+.container-fluid {
+    max-width: 1240px;
+    margin: auto;
+}
+.mt--3px {
+    margin-top: -3px !important;
+}
+.fw-normal {
+    font-weight: $fw-normal !important;
+}
+.fw-sbold {
+    font-weight: $fw-sbold !important;
+}
+.fw-bold {
+    font-weight: $fw-bold !important;
+}
+
+$fonts: (
+    12: $fs-12,
+    14: $fs-14,
+    16: $fs-16,
+    18: $fs-18,
+    24: $fs-24,
+    28: $fs-28,
+    36: $fs-36,
+    65: $fs-65,
+);
+
+@each $element, $c in $fonts {
+    .fs-#{$element} {
+        font-size: $c !important;
+    }
+}
+
+$colour: (
+    black: $black,
+    white: $white,
+    grey: $grey,
+    text: $text,
+    primary: $primary,
+    light: $light,
+    danger: $danger,
+    orange: $orange,
+);
+
+@each $element, $c in $colour {
+    .text-#{$element} {
+        color: $c !important;
+    }
+
+    .bg-#{$element} {
+        background-color: $c !important;
+    }
+}
+
+.text-strike {
+    text-decoration: line-through !important;
+}
+.nav-link {
+    padding: 0;
+}
+
+.material-icons {
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.py-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bottom-line {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    &::after {
+        content: "";
+        width: 35px;
+        height: 3px;
+        background: #01b148;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.vertical-align-top {
+    vertical-align: top !important;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+    color: inherit;
+    background-color: inherit;
+    border-color: inherit;
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+    box-shadow: inherit;
+}
+
+ul {
+    &.dot-orange {
+        margin-bottom: 15px;
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 5px;
+            &::before {
+                content: "●";
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 3px;
+                margin: auto;
+                color: $orange;
+            }
+        }
+    }
+    &.dot-grey {
+        margin-bottom: 15px;
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 5px;
+            &::before {
+                content: "●";
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 3px;
+                margin: auto;
+                color: $text;
+            }
+        }
+    }
+    &.dash-grey {
+        margin-bottom: 15px;
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 5px;
+            &::before {
+                content: "-";
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                color: $text;
+            }
+        }
+    }
+    &.half-li {
+        margin-bottom: 15px;
+        li {
+            width: 50%;
+            padding-right: 15px;
+            float: left;
+        }
+        &::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+}
+ol {
+    &.ol-num {
+        counter-reset: my-awesome-counter;
+        list-style: none;
+        margin:0;
+        padding:0;
+        li {
+            counter-increment: my-awesome-counter;
+            position: relative;
+            padding-left:40px;
+            margin-bottom:20px;
+            &::before {
+                content: counter(my-awesome-counter)'.';
+                position: absolute;
+                left:0;
+                top:3px;
+                font-size: $fs-18;
+            }
+        }
+    }
+    &.ol-color-white {
+        * {
+            color: $white;
+        }
+    }
+    &.ol-num-orange {
+        counter-reset: my-awesome-counter;
+        list-style: none;
+        margin:0;
+        padding:0;
+        li {
+            counter-increment: my-awesome-counter;
+            position: relative;
+            padding-left:20px;
+            margin-bottom:20px;
+            color: $orange;
+            &::before {
+                content: counter(my-awesome-counter)'.';
+                position: absolute;
+                left:0;
+            }
+        }
+    }
+}
+
+.white-space-nowrap{
+    white-space: nowrap;
+}
+.word-break-all{
+    word-break: break-all;
+}
+
+.border-md-left{
+    border-left:1px solid darken($white,10%);
+}

@@ -1,0 +1,106 @@
+.btn {
+    font-size: $fs-14;
+    line-height: 55px;
+    @include border-radius(0px);
+    padding: 0 20px;
+    outline: 0;
+    box-shadow: 0 0 0 transparent;
+    white-space: nowrap;
+    &:hover,
+    &:focus,
+    &:active {
+        outline: 0;
+        box-shadow: 0 0 0 transparent !important;
+    }
+    &.btn-primary {
+        background: transparent linear-gradient(105deg, rgba(1, 177, 72, 1) 0%, rgba(6, 136, 92, 1) 100%) 0% 0%
+            no-repeat padding-box;
+        border: 0px;
+        text-transform: none;
+        color: $white;
+        &:hover,
+        &:focus,
+        &:active {
+            outline: 0;
+            box-shadow: 0 0 0 transparent;
+        }
+    }
+    &.btn-nothing {
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        line-height: 1.3;
+        @include border-radius(0);
+        height: auto;
+        color: $text;
+        &.box-shadow {
+            @include box-shadow(0, 3px, 6px, rgba(0, 0, 0, 0.16));
+        }
+    }
+    &.btn-border {
+        border: 2px solid $primary;
+        line-height: 53px;
+        background-color: transparent;
+        color: $primary;
+        &.wrap-btn{
+            white-space: break-spaces;
+            line-height: 24px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    &.btn-dotted {
+        color: $primary;
+        font-weight: $fw-sbold;
+        border: 1px dashed $primary;
+    }
+    &.btn-border-grey {
+        color: $text;
+        border: 2px solid darken($white, 20%);
+    }
+    &.btn-border-orange {
+        border: 2px solid $orange;
+        line-height: 53px;
+        background-color: transparent;
+        color: $orange;
+    }
+    &.btn-orange {
+        color: $white;
+        background: transparent linear-gradient(96deg, $orange 0%, $orange-light 100%) 0% 0% no-repeat padding-box;
+    }
+    &.btn-danger {
+        color: $white;
+        border: 0;
+        background: transparent linear-gradient(108deg, #e34348 0%, #c60000 100%) 0% 0% no-repeat padding-box;
+    }
+    &.line-height-32 {
+        line-height: 32px;
+    }
+}
+
+.dropdown {
+    .dropdown-menu {
+        @include border-radius(0);
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 0;
+        @include box-shadow(0, 2px, 6px, rgba(0, 0, 0, 0.4));
+    }
+    .dropdown-item {
+        font-size: $fs-14;
+        color: $grey;
+        padding-left: 0px;
+        padding-right: 0px;
+        @include border-radius(0px);
+        outline: 0;
+        box-shadow: 0 0 0 transparent;
+        &:hover,
+        &:focus,
+        &:active {
+            outline: 0;
+            box-shadow: 0 0 0 transparent !important;
+            background-color: transparent;
+        }
+    }
+}

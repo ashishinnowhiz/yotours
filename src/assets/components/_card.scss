@@ -1,0 +1,1012 @@
+.product-container {
+    margin: 10px;
+    &.no-margin {
+        margin: 0;
+    }
+    .product-card {
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 195px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.41);
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 15%, rgba(20, 20, 20, 1) 100%) 0% 0% no-repeat padding-box;
+        }
+        .offer {
+            background: transparent linear-gradient(109deg, rgba(227, 67, 72, 1) 0%, rgba(198, 0, 0, 1) 100%) 0% 0% no-repeat padding-box;
+            position: absolute;
+            font-size: $fs-14;
+            color: $white;
+            padding: 2px 10px;
+            right: 10px;
+            top: 10px;
+            font-family: $font-oswald;
+        }
+        .offer-shape {
+            position: absolute;
+            right: 15px;
+            top: -2px;
+            color: #fff;
+            text-align: center;
+            width: 50px;
+            height: 75px;
+            font-family: $font-oswald;
+            font-size: $fs-14;
+            background: rgba(198, 0, 0, 1) no-repeat center center / contain;
+            padding: 10px 0;
+            span {
+                font-size: $fs-16;
+            }
+        }
+        .bottom-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 0 15px 15px 15px;
+            h5 {
+                color: $white;
+                font-weight: 300;
+                font-family: $font-oswald;
+                margin: 0;
+            }
+            .bottom-details {
+                p {
+                    display: inline-block;
+                    margin: 0;
+                    width: 33%;
+                    font-size: $fs-12;
+                    color: $white;
+                    &:first-child {
+                        color: lighten($primary, 15%);
+                    }
+                    &:nth-child(2) {
+                        text-align: center;
+                    }
+                    &:last-child {
+                        text-align: right;
+                    }
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        &.product-card2 {
+            height: 258px;
+            .middle-details {
+                color: $white;
+                margin: 0;
+                font-size: $fs-12;
+                span {
+                    color: lighten($primary, 15%);
+                }
+            }
+            .bottom-text {
+                .bottom-details {
+                    p {
+                        width: 49%;
+                        &:first-child {
+                            color: $white;
+                            opacity: 0.6;
+                        }
+                        &:last-child {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .btn.btn-primary.product-card2 {
+        height: 258px;
+        width: 100%;
+        line-height: 20px;
+        font-size: $fs-16;
+    }
+}
+
+.services-card.card {
+    height: 100%;
+    @include border-radius(0px);
+    padding: 40px 15px;
+    img {
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: $fs-18;
+    }
+}
+
+.home-card {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 165px;
+    @include border-radius(0px);
+    border: 0;
+    .bottom-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0 15px 15px 15px;
+        background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 18%, rgba(20, 20, 20, 1) 100%) 0% 0% no-repeat padding-box;
+        h3 {
+            color: $white;
+            margin: 0;
+            font-family: $font-oswald;
+            font-weight: 300;
+        }
+    }
+}
+
+.text-hover-card {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 260px;
+    @include border-radius(0px);
+    border: 0;
+    overflow: hidden;
+    .number {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        min-width: 40px;
+        padding: 15px 0;
+        text-align: center;
+        color: $grey;
+        background-color: #9fffc6;
+    }
+    .bottom-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0 15px 15px 15px;
+        background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 18%, rgba(20, 20, 20, 1) 100%) 0% 0% no-repeat padding-box;
+        h5 {
+            color: $white;
+            margin: 0;
+            font-family: $font-oswald;
+            font-weight: 300;
+        }
+        p {
+            color: $white;
+            margin: 0;
+            font-weight: 300;
+        }
+    }
+    .hover-p {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 15px;
+        background-color: $grey;
+        min-height: 100%;
+        @include transition(all, 0.3s, ease-in);
+        p {
+            color: $white;
+            margin: 0;
+            font-weight: 300;
+        }
+    }
+    &:hover .hover-p {
+        top: 0;
+    }
+}
+
+.city-card {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 258px;
+    @include border-radius(0px);
+    border: 0;
+    .top-text {
+        h3 {
+            color: $white;
+            margin: 0;
+            font-family: $font-oswald;
+            font-weight: 300;
+            font-size: $fs-24;
+        }
+        p {
+            margin: 0 0 10px;
+            color: $white;
+            line-height: 1.2;
+            a {
+                color: $white;
+            }
+        }
+    }
+    .bottom-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0 15px 15px 15px;
+        background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 18%, rgba(20, 20, 20, 1) 100%) 0% 0% no-repeat padding-box;
+        h3 {
+            color: $white;
+            margin: 0;
+            font-family: $font-oswald;
+            font-weight: 300;
+        }
+        p {
+            margin: 0;
+            color: $white;
+            a {
+                color: $white;
+            }
+        }
+    }
+}
+
+.home-city-card {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 258px;
+    @include border-radius(0px);
+    border: 0;
+    .offer {
+        background: transparent linear-gradient(109deg, rgba(227, 67, 72, 1) 0%, rgba(198, 0, 0, 1) 100%) 0% 0% no-repeat padding-box;
+        position: absolute;
+        font-size: $fs-14;
+        color: $white;
+        padding: 2px 10px;
+        right: 10px;
+        top: 10px;
+        font-family: $font-oswald;
+    }
+    .bottom-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0 15px 15px 15px;
+        background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 18%, rgba(20, 20, 20, 1) 100%) 0% 0% no-repeat padding-box;
+        h3 {
+            color: $white;
+            margin: 0;
+            font-family: $font-oswald;
+            font-weight: 300;
+        }
+        p {
+            margin: 0;
+            color: $white;
+            a {
+                color: $white;
+            }
+        }
+    }
+    &.xl {
+        height: 400px;
+    }
+    &.lg {
+        height: 330px;
+    }
+    &.sm {
+        height: 200px;
+    }
+}
+
+.holiday-card {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 180px;
+    @include border-radius(0px);
+    border: 0;
+    margin-bottom: 30px;
+    .bottom-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0 15px 15px 15px;
+        background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 18%, rgba(20, 20, 20, 1) 100%) 0% 0% no-repeat padding-box;
+        h2 {
+            color: $white;
+            margin: 0;
+            font-family: $font-oswald;
+            font-weight: 300;
+            text-align: center;
+        }
+        p {
+            color: $white;
+            text-align: center;
+            font-family: $primary-font;
+            margin: 0;
+        }
+    }
+}
+
+.cityexperience-card {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 258px;
+    @include border-radius(0px);
+    border: 0;
+    margin-bottom: 30px;
+    .bottom-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0 15px 15px 15px;
+        background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 18%, rgba(20, 20, 20, 1) 100%) 0% 0% no-repeat padding-box;
+        h2 {
+            color: $white;
+            margin: 0;
+            font-family: $font-oswald;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+    &.button-bg {
+        background: $primary-gradient;
+        .bottom-text {
+            top: 0;
+            background: rgba(0, 0, 0, 0.1);
+            h2 {
+                height: 64px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                text-align: center;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+.cityinterest-card {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 258px;
+    @include border-radius(0px);
+    border: 0;
+    margin-bottom: 30px;
+    @include box-shadow(0, 3px, 10px, rgba(0, 0, 0, 0.33));
+    .bottom-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0 15px 15px 15px;
+        background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 18%, rgba(20, 20, 20, 1) 100%) 0% 0% no-repeat padding-box;
+        h2 {
+            color: $white;
+            margin: 0;
+            font-family: $font-oswald;
+            font-weight: 300;
+            text-align: center;
+        }
+        p {
+            margin: 10px 0 0;
+            color: darken($white, 15%);
+            text-align: center;
+            font-size: $fs-12;
+            line-height: 16px;
+        }
+    }
+}
+
+.storyteller-card.card {
+    background: lighten($black, 7%);
+    border-radius: 0px;
+    padding: 8px;
+    position: relative;
+    height: 100%;
+    .storyteller-image {
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        bottom: 8px;
+        width: 180px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        &::after {
+            content: "";
+            left: 0;
+            top: 0;
+            right: 0;
+            position: absolute;
+            bottom: 0;
+            background: transparent linear-gradient(0deg, #111111 0%, #111111d1 15%, #11111100 30%) 0% 0% no-repeat padding-box;
+        }
+    }
+    .storyteller-text {
+        padding: 10px 10px 10px 195px;
+    }
+}
+
+.socialmedia-card {
+    margin: 10px;
+    &>div {
+        height: 180px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.cityvlog-card {
+    padding: 12px;
+    @include border-radius(0);
+    height: 100%;
+    iframe {
+        min-height: 150px;
+    }
+    &.light {
+        background-color: darken($white, 10%);
+        border-color: darken($white, 10%);
+        .cityvlog-text {
+            p {
+                span.author {
+                    color: $grey;
+                }
+            }
+        }
+    }
+    &.dark {
+        background-color: lighten($black, 7%);
+        border-color: lighten($black, 7%);
+        h2 {
+            color: $white;
+        }
+        .cityvlog-text {
+            p {
+                span.author {
+                    color: $white;
+                }
+            }
+        }
+    }
+    .cityvlog-text {
+        padding: 10px 0;
+        p .icon-text {
+            margin: 0 20px 0 0;
+            display: inline-block;
+        }
+    }
+}
+
+.testi-card {
+    position: relative;
+    background-color: darken($white, 10%);
+    @include border-radius(0);
+    @include box-shadow(0, 3px, 6px, rgba(0, 0, 0, 0.3));
+    padding: 30px 260px 30px 60px;
+    .testi-right {
+        position: absolute;
+        right: 30px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 55px;
+    }
+    .testi-content {
+        margin: 0;
+        position: relative;
+        &::before,
+        &::after {
+            content: url("../../images/icons/inverted-commas.svg");
+            top: -5px;
+            right: -35px;
+            left: auto;
+            position: absolute;
+        }
+        &::before {
+            left: -35px;
+            right: auto;
+            @include transform(rotate(180deg));
+        }
+    }
+}
+
+.testi-card1 {
+    position: relative;
+    padding: 15px;
+    .shape-circle {
+        margin: auto;
+    }
+    .testi-content {
+        margin: 0 35px;
+        position: relative;
+        text-align: center;
+        &::before,
+        &::after {
+            content: url("../../images/icons/inverted-commas-grey.svg");
+            top: -5px;
+            right: -35px;
+            left: auto;
+            position: absolute;
+        }
+        &::before {
+            left: -35px;
+            right: auto;
+            @include transform(rotate(180deg));
+        }
+        &::after {
+            bottom: -5px;
+            top: auto;
+        }
+    }
+}
+
+.comments-card {
+    position: relative;
+    @include border-radius(0);
+    @include box-shadow(0,
+    3px,
+    6px,
+    rgba(0,
+    0,
+    0,
+    0.3));
+    margin-bottom: 15px;
+}
+
+.itinerary-card {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 258px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.41);
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: transparent linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 15%, rgba(20, 20, 20, 1) 100%) 0% 0% no-repeat padding-box;
+    }
+    .bottom-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0 15px 15px 15px;
+        h5 {
+            color: $white;
+            font-weight: 300;
+            font-family: $font-oswald;
+            margin: 0;
+        }
+        .middle-details {
+            color: $white;
+            margin: 0;
+            font-size: $fs-12;
+            span {
+                color: lighten($primary, 15%);
+            }
+        }
+        .bottom-details {
+            p {
+                display: inline-block;
+                margin: 0;
+                font-size: $fs-12;
+                color: $white;
+            }
+        }
+    }
+    &.button-bg {
+        background: $primary-gradient;
+        .bottom-text {
+            top: 0;
+            background: rgba(0, 0, 0, 0.1);
+            h2 {
+                height: 64px;
+                color: $white;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                text-align: center;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+.honeymoon-card {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 358px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.41);
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: transparent linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 15%, rgba(20, 20, 20, 1) 100%) 0% 0% no-repeat padding-box;
+    }
+    .left-text {
+        position: relative;
+        width: 40%;
+        text-align: center;
+        h2,
+        h1,
+        h4 {
+            color: $white;
+        }
+        h2 {
+            margin-bottom: 40px;
+        }
+        h1 {
+            margin: 0 30px 40px;
+            display: inline-block;
+            position: relative;
+            font-family: $primary-font;
+            font-size: $fs-65;
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 20px;
+                height: 3px;
+                margin: auto;
+                background-color: $white;
+            }
+            &::before {
+                left: -30px;
+            }
+            &::after {
+                right: -30px;
+            }
+        }
+        h4 {
+            margin-bottom: 20px;
+            font-weight: $fw-normal;
+        }
+    }
+}
+
+.live-experience-card {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    @include border-radius(0px);
+    border: 0;
+    @include box-shadow(0,
+    0,
+    3px,
+    rgba(0,
+    0,
+    0,
+    0.3));
+    .bottom-box {
+        position: absolute;
+        bottom: -30px;
+        left: 40px;
+        right: -40px;
+        padding: 15px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        min-height: 60%;
+        @include box-shadow(0,
+        0,
+        5px,
+        rgba(0,
+        0,
+        0,
+        0.4));
+        p {
+            color: $white;
+            margin: 0;
+            .live-bg {
+                background-color: $primary;
+                display: inline;
+                vertical-align: middle;
+                padding: 1px 4px 0px;
+            }
+        }
+        h2 {
+            color: $white;
+            margin: 0;
+            font-family: $font-oswald;
+            font-weight: 300;
+        }
+        .bottom-text {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+        }
+    }
+}
+
+.hotel-card {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 258px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.41);
+    .bottom-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.8);
+        h2 {
+            color: $white;
+            font-weight: 300;
+            font-family: $font-oswald;
+            margin: 0;
+            font-size: $fs-18;
+        }
+        .bottom-details {
+            p {
+                display: inline-block;
+                margin: 0;
+                font-size: $fs-12;
+                color: $white;
+                width: 49%;
+                &:first-child {
+                    color: $white;
+                    opacity: 0.9;
+                    span i {
+                        font-style: normal;
+                        &.yes {
+                            color: $primary;
+                        }
+                        &.no {
+                            color: $danger;
+                        }
+                    }
+                }
+                &:last-child {
+                    text-align: right;
+                }
+                a {
+                    color: $white;
+                }
+            }
+        }
+        .middle-details {
+            color: $white;
+            margin: 0;
+            font-size: $fs-12;
+            span {
+                color: lighten($primary, 15%);
+            }
+        }
+    }
+    &.lg {
+        height: 100%;
+        .bottom-text {
+            .bottom-details {
+                p {
+                    font-size: $fs-14;
+                }
+            }
+            .middle-details {
+                margin: 0 0 10px;
+                font-size: $fs-14;
+            }
+            h2 {
+                font-size: $fs-28;
+                margin: 0 0 10px;
+            }
+        }
+    }
+    &.btn.btn-primary {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 22px;
+        height: 258px;
+        font-size: $fs-16;
+    }
+}
+
+.customer-card {
+    @include transition(all,
+    0.3s,
+    ease-in);
+    background: darken($white, 10%);
+    @include border-radius(0);
+    padding-bottom: 40px;
+    border: 0;
+    * {
+        text-align: center;
+    }
+    h2 {
+        margin-top: 15px;
+    }
+    .comma-img {
+        display: none;
+    }
+    .customer-image {
+        position: absolute;
+        left: 0;
+        bottom: -35px;
+        right: 0;
+        margin: auto;
+        width: 70px;
+        height: 70px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include border-radius(50%);
+        &::before {
+            content: "";
+            width: 90px;
+            height: 90px;
+            background: darken($white, 10%);
+            left: -10px;
+            top: -10px;
+            @include border-radius(50%);
+            position: absolute;
+            z-index: -1;
+        }
+    }
+}
+
+.search-result-card {
+    border: 1px solid darken($white, 10%);
+    margin-bottom: 15px;
+    background-color: $white;
+    .result-img-container {
+        position: relative;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 200px;
+        .btn.btn-border {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+
+.tour-calendar {
+    border: 1px solid darken($white, 10%);
+    .tour-row {
+        height: 110px;
+        border-bottom: 1px solid darken($white, 10%);
+        &:last-child {
+            border-bottom: 0;
+        }
+        .tour-day {
+            height: 100%;
+            padding: 15px;
+            background-color: darken($white, 5%);
+            display: inline-block;
+            width: 90px;
+            vertical-align: top;
+            color: $text;
+            font-weight: $fw-sbold;
+            text-transform: uppercase;
+            border-right: 1px solid darken($white, 10%);
+        }
+        .tour-scroll {
+            display: inline-block;
+            @include calc(width,
+            80%,
+            "100% - 90px");
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            height: 100%;
+            li {
+                display: inline-block;
+                height: 100%;
+                max-width: 400px;
+                width: 100%;
+                vertical-align: top;
+                border-right: 1px solid darken($white, 10%);
+                cursor: pointer;
+                &:last-child {
+                    border-right: 0;
+                }
+                .tour-left-image {
+                    background-color: darken($white, 2%);
+                    height: 100%;
+                    width: 80px;
+                    background-size: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                .tour-padding {
+                    padding: 15px;
+                    display: inline-block;
+                    vertical-align: top;
+                    &.tour-padding {
+                        @include calc(width,
+                        60%,
+                        "100% - 80px");
+                    }
+                    h5 {
+                        font-weight: $fw-sbold;
+                        color: $text;
+                        margin: 0px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                    p {
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        margin: 0;
+                        overflow: hidden;
+                    }
+                }
+                &.active {
+                    background-color: $grey;
+                    .tour-padding {
+                        h5,
+                        p {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tour-dropdown {
+        background-color: $grey;
+        padding: 15px;
+        position: relative;
+        display: none;
+        &.show {
+            display: block;
+        }
+        .tour-dropdown-close {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            padding: 10px;
+            z-index: 1;
+            color: $white;
+            line-height: 0px;
+            background: transparent;
+            border: 0;
+        }
+    }
+}

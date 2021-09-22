@@ -1,0 +1,228 @@
+@media screen and (max-width: 1239px) {
+    header {
+        .header-left {
+            width: 40%;
+        }
+        .header-right {
+            width: 60%;
+            ul {
+                li.remove-resp {
+                    display: none;
+                }
+                li.resp-menu {
+                    display: inline-block;
+                    svg {
+                        width: 32px;
+                        height: 29px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1239px) {
+    .home-banner {
+        .carousel-indicators {
+            left: 15px;
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .home-design1 {
+        margin-top: 0;
+        .design2,
+        .design1 {
+            margin-top: 0;
+            float: none;
+            width: 100%;
+        }
+        .home-design-left,
+        .home-design-right {
+            width: 50%;
+        }
+        .home-design-left {
+            background-color: $grey;
+        }
+        .home-design-right {
+            background-color: darken($white, 15%);
+            .design2 {
+                & > h3 {
+                    display: block;
+                }
+            }
+            .design1 {
+                & > h3 {
+                    display: none;
+                }
+            }
+        }
+    }
+    .home-tabs-container .home-heading {
+        position: relative;
+        right: auto;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+    .home-city-card {
+        &.xl,
+        &.lg,
+        &.sm {
+            height: 258px;
+        }
+    }
+    footer .container-fluid .footer-cities ul li {
+        width: 49%;
+    }
+    .my-cart.shape-name {
+        .shape-circle {
+            position: relative;
+            left: auto;
+            top: auto;
+            bottom: auto;
+            width: 100%;
+            height: 200px;
+        }
+        .shape-text {
+            padding-left: 0;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    header {
+        .header-right {
+            width: 45%;
+        }
+        .header-left {
+            width: 55%;
+        }
+    }
+    .home-banner {
+        min-height: auto;
+        height: 470px;
+        .banner-form-container {
+            display: none;
+        }
+        .banner-img .container-fluid .d-table-m .d-table-middle > div h1 {
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+    .banner-holiday-place {
+        min-height: auto;
+        &::before {
+            width: 100%;
+        }
+        .banner-text {
+            h1.banner-heading {
+                font-size: 30px;
+                line-height: 36px;
+            }
+        }
+    }
+    .banner {
+        min-height: auto;
+        &::before {
+            width: 100%;
+        }
+        .banner-text h1.banner-heading {
+            font-size: 30px;
+            line-height: 36px;
+            span{
+                display: block;
+            }
+        }
+    }
+    .holiday-carousal-container {
+        .holiday-carousal {
+            &::before {
+                width: 100%;
+                background: transparent linear-gradient(90deg, #0000009e 0%, #0000009e 55%, #00000000 100%) 0% 0%
+                    no-repeat padding-box;
+            }
+            .holiday-right {
+                margin-left: 15px;
+            }
+        }
+        .carousel-indicators {
+            left: 15px;
+        }
+    }
+    .heading-view-all {
+        padding-right: 0;
+        .view-all {
+            position: relative;
+            right: auto;
+            bottom: auto;
+            display: block;
+            margin-top: 15px;
+        }
+    }
+    .home-banner-bottom.fixed-bottom {
+        display: none;
+    }
+    .my-cart.shape-name {
+        .shape-circle {
+            height: 150px;
+        }
+    }
+    .border-md-left {
+        border-left: 0 !important;
+    }
+    .resp-video-iframe {
+        height: 220px !important;
+    }
+    .slick-slider.normal-slick-slider {
+        margin: 0 1px;
+    }
+}
+@media screen and (max-width: 575px) {
+    header {
+        .header-left {
+            .header-search {
+                display: none;
+            }
+        }
+    }
+    .home-banner .banner-img .container-fluid .d-table-m .d-table-middle > div {
+        width: 270px;
+    }
+    .home-design1 {
+        .home-design-left,
+        .home-design-right {
+            width: 100%;
+        }
+    }
+    .my-cart.shape-name {
+        .shape-circle {
+            height: 100px;
+        }
+    }
+    .banner-holiday-place {
+        .banner-text {
+            .banner-ul li {
+                display: block;
+                width: 100%;
+                &:first-child {
+                    margin: 0 0 15px;
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .banner {
+        .banner-text {
+            .banner-ul li {
+                display: block;
+                width: 100%;
+                &:first-child {
+                    margin: 0 0 15px;
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

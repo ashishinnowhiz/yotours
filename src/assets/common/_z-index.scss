@@ -1,0 +1,46 @@
+.img-effect {
+    &::before,
+    &::after {
+        z-index: -1;
+    }
+}
+.slick-prev,
+.slick-next {
+    z-index: 5;
+}
+.go-to-top,
+.home-banner-bottom {
+    z-index: 98;
+}
+.banner-bottom.fix-top {
+    z-index: 99;
+}
+.product-menu {
+    z-index: 99;
+}
+.nav-left .nav-left-fixed {
+    z-index: 99;
+}
+.page-filter {
+    z-index: 100;
+    .filter > .btn.btn-primary {
+        z-index: 0;
+    }
+    .filter-left {
+        z-index: -1;
+    }
+}
+.banner,
+.product-banner,
+.holiday-banner,
+.home-banner {
+    z-index: 101;
+}
+header,
+footer {
+    z-index: 102;
+}
+
+.internet-error {
+    z-index: 200;
+}

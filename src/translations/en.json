@@ -1,0 +1,20 @@
+{
+    "WELCOME": "Welcome to {cityName}",
+    "CITY_DESCRIPTION": "Baroque streetscapes and imperial palaces set the stage for Vienna's artistic and musical masterpieces alongside its coffee-house culture and vibrant epicurean and design scenes.",
+    "IMPERIAL_ARCHITECTURE": "Imperial Architecture",
+    "IMPERIAL_ARCHITECTURE_DESC": "Vienna's imperial grandeur is the legacy of the powerful Habsburg monarchy. Their home for more than six centuries, the Hofburg palace complex, incorporates the Burgkapelle (Imperial Chapel), where the Vienna Boys' Choir sings Sunday...",
+    "READ_MORE": "Read more",
+    "header.LOCAL_EXPERIENCE": "Local Experiences in",
+    "banner.PLAN_TOUR": "Plan tour",
+    "banner.STORYTELLER": "Storytellers",
+    "banner.CITY_BLOGS": "City Blogs",
+    "banner.CITY_VBLOGS": "City Vlogs",
+    "banner.SOCIAL_MEDIA": "Social Media",
+    "banner.BUSINESS_PARTNER": "Business Partners",
+    "banner.PART_OF_COMMUNITY": "Be a part of the Yo Tour community",
+    "banner.CITY_GUIDE_FOR": "City guide of {cityName}",
+    "city.TYPE_OF_EXPERIENCE": "Types of experiences in {cityName}",
+    "city.EXPERIENCE_CITY_INTEREST": "Experience {cityName} for every interest",
+    "city.TOUR_TYPES": "{tourName} in {cityName} ({count})",
+    "city.TOUR_TYPES_exp": "Limited time deals in {cityName} ({count})"
+}
